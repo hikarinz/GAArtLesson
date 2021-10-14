@@ -34,5 +34,15 @@ public class PlayerMovement : MonoBehaviour
             }
             transform.localScale = new Vector3(scaleX * direction, transform.localScale.y, transform.localScale.z);
         }
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance);
+        inAir = hit.collider == null;
+
+        if(!inAir && Input.GetButtonDown("Jump"))
+        {
+            transform.position += Vector3.up * 0.1f;
+            rb.AddForce(Vector2.up * jumpForce);
+
+        }
     }
 }
