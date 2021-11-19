@@ -41,3 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Platform
+    uniqueID: 600981911
+    locked: 0
+  - name: Collection
+    uniqueID: 2178362735
+    locked: 0
+  - name: Player
+    uniqueID: 3965716789
+    locked: 0
+  - name: Bounds
+    uniqueID: 3951767323
+    locked: 0
+  - name: Particles
+    uniqueID: 1750075109
+    locked: 0
+  - name: Weather
+    uniqueID: 736240033
+    locked: 0
